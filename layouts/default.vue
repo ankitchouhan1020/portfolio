@@ -2,7 +2,7 @@
   <div class="container">
     <div class="side-bar">
       <ul>
-        <li><img alt="team" src="https://dummyimage.com/80x80" /></li>
+        <li><img alt="team" src="../assets/images/profile.jpeg" /></li>
         <li><NuxtLink to="/">HOME</NuxtLink></li>
         <li><NuxtLink to="/skills">SKILLS</NuxtLink></li>
         <li><NuxtLink to="/projects">PROJECTS</NuxtLink></li>
@@ -46,6 +46,6 @@ li:first-child {
 }
 
 img {
-  @apply w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full;
+  @apply w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full border-4 border-gray-300;
 }
 </style>

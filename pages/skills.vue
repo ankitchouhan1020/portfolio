@@ -32,7 +32,7 @@ export default {};
 
 h1 {
   font-family: "Saira Extra Condensed", sans-serif;
-  @apply text-4xl text-sandy-brown;
+  @apply text-5xl text-sandy-brown;
 }
 
 h2 {
