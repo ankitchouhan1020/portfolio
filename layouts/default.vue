@@ -2,7 +2,7 @@
   <div class="container">
     <div class="side-bar">
       <ul>
-        <li><img alt="team" src="../assets/images/profile.jpeg" /></li>
+        <li><img alt="team" src="../static/profile.jpeg" /></li>
         <li><NuxtLink to="/">HOME</NuxtLink></li>
         <li><NuxtLink to="/skills">SKILLS</NuxtLink></li>
         <li><NuxtLink to="/projects">PROJECTS</NuxtLink></li>
@@ -32,7 +32,7 @@ export default {};
 }
 
 .side-bar > ul > li {
-  @apply pb-3 text-gray-200 font-semibold;
+  @apply pb-3 text-gray-400 font-semibold text-xl;
 }
 
 li:first-child {
@@ -46,6 +46,14 @@ li:first-child {
 }
 
 img {
-  @apply w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full border-4 border-gray-300;
+  @apply w-48 h-48 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full border-4 border-gray-300;
+}
+
+.nuxt-link-exact-active {
+  @apply text-gray-100;
+}
+
+a:hover {
+  @apply text-gray-100;
 }
 </style>
