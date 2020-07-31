@@ -76,7 +76,6 @@
             </ul>
           </div>
         </div>
-        x
       </div>
     </div>
   </section>
@@ -98,6 +97,6 @@ h2 {
 }
 
 .features li {
-  @apply text-gray-500 list-disc;
+  @apply text-gray-500 list-disc text-justify;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="side-bar">
       <ul>
-        <li><img alt="team" src="../static/profile.jpeg" /></li>
+        <li><img alt="team" src="../static/profile.webp" /></li>
         <li><NuxtLink to="/">HOME</NuxtLink></li>
         <li><NuxtLink to="/skills">SKILLS</NuxtLink></li>
         <li><NuxtLink to="/projects">PROJECTS</NuxtLink></li>
@@ -31,12 +31,21 @@ export default {};
   @apply w-1/5 min-h-screen flex items-center justify-center text-center bg-burnt-sienna overflow-hidden;
 }
 
+@media (max-width: 750px) {
+  .side-bar {
+    width: 0;
+  }
+  .contents {
+    min-width: 100%;
+  }
+}
+
 .side-bar > ul > li {
   @apply pb-3 text-gray-400 font-semibold text-xl;
 }
 
 li:first-child {
-  @apply mb-5;
+  @apply m-2 mb-5;
 }
 
 .contents {
@@ -46,7 +55,7 @@ li:first-child {
 }
 
 img {
-  @apply w-48 h-48 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full border-4 border-gray-300;
+  @apply w-48 h-48 p-2 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full border-2 border-gray-300;
 }
 
 .nuxt-link-exact-active {

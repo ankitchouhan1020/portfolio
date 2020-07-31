@@ -3,7 +3,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: "spa",
+  mode: "ssr",
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -14,17 +14,22 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || "",
+    title: "Ankit Chouhan",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: "Ankit Chouhan, Programmer, Web Developer"
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content: "resume, frontend, backend, developer, vue"
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon-32x32.png" }]
   },
   /*
    ** Global CSS
