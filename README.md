@@ -1,5 +1,8 @@
 # portfolio
 
+project is still going on.
+Current Progress: https://vigorous-hypatia-67528b.netlify.app/
+
 ## Build Setup
 
 ```bash
